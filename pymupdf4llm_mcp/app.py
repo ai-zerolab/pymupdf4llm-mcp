@@ -51,7 +51,7 @@ def convert_pdf_to_markdown(
                 f.write(content)
             return {
                 "success": True,
-                "markdown_path": save_path.as_posix(),
+                "markdown_path": save_path.expanduser().resolve().absolute().as_posix(),
             }
         else:
             return {
