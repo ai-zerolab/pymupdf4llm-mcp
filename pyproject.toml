@@ -111,7 +111,7 @@ skip_empty = true
 [tool.coverage.run]
 branch = true
 source = ["pymupdf4llm_mcp"]
-
+omit = ["tests/*", "pymupdf4llm_mcp/cli.py"]
 
 [project.scripts]
 pymupdf4llm-mcp = "pymupdf4llm_mcp.cli:app"
