@@ -16,7 +16,12 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-dependencies = ["mcp[cli]>=1.6.0", "typer>=0.15.2"]
+dependencies = [
+    "mcp[cli]>=1.6.0",
+    "pydantic>=2.11.3",
+    "pymupdf4llm>=0.0.21",
+    "typer>=0.15.2",
+]
 
 [project.urls]
 Homepage = "https://ai-zerolab.github.io/pymupdf4llm-mcp/"
