@@ -26,7 +26,7 @@ Configure your cursor/windsurf/... and other MCP client to this server:
 ```json
 {
   "mcpServers": {
-    "markitdown-mcp": {
+    "pymupdf4llm-mcp": {
       "command": "uvx",
       "args": [
         "pymupdf4llm-mcp@latest",
