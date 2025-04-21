@@ -18,4 +18,5 @@ COPY . /app
 # Sync the project
 RUN uv sync --frozen
 
-CMD [ "python", "pymupdf4llm_mcp/foo.py" ]
+ENTRYPOINT [ "tini", "--", "uv", "run", "pymupdf4llm_mcp"]
+CMD ["stdio"]
