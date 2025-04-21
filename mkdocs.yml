@@ -1,0 +1,52 @@
+site_name: pymupdf4llm-mcp
+repo_url: https://github.com/ai-zerolab/pymupdf4llm-mcp
+site_url: https://ai-zerolab.github.io/pymupdf4llm-mcp
+site_description: MCP Server for pymupdf4llm
+site_author: Wh1isper
+edit_uri: edit/main/docs/
+repo_name: ai-zerolab/pymupdf4llm-mcp
+copyright: Maintained by <a href="https://ai-zerolab.com">ai-zerolab</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["pymupdf4llm_mcp"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ai-zerolab/pymupdf4llm-mcp
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/pymupdf4llm-mcp
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
