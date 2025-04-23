@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"pymupdf4llm-mcp","text":"<p>MCP Server for pymupdf4llm</p>"}]}
