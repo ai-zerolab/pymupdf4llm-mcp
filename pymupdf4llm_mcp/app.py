@@ -54,9 +54,19 @@ def convert_pdf_to_markdown(
                 "markdown_path": save_path.expanduser().resolve().absolute().as_posix(),
             }
         else:
+            if len(content) > 10000:
+                # Truncate the content to avoid too long response
+                content = content[:10000] + "\n\n... (truncated)"
+                tips = (
+                    "The content is too long. Please use `save_path` to save the markdown file and read it partially."
+                )
+            else:
+                tips = "All content is returned. "
+
             return {
                 "success": True,
                 "markdown_content": content,
+                "tips": tips,
             }
     except Exception as e:
         return {
