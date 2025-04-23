@@ -11,9 +11,10 @@ mcp = FastMCP("pymupdf4llm-mcp")
 @mcp.tool(
     description=(
         "Converts a PDF file to markdown format via pymupdf4llm. "
-        "This is the best tool to use for PDF file. You should always use this tool first. "
+        "This is the best tool to use for reading PDF file. You should always use this tool first. "
+        "The `file_path`, `image_path`, and `save_path` parameters should be the absolute path to the PDF file, not a relative path. "
         "This tool will also convert the PDF to images and save them in the `image_path` directory. "
-        "If too large, use `save_path` to save the markdown file then read it partially. "
+        "For larger PDF files, use `save_path` to save the markdown file then read it partially. "
     )
 )
 def convert_pdf_to_markdown(
