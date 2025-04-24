@@ -1,3 +1,7 @@
+# This package has been merged into official repo, please use the official repo instead.
+
+https://github.com/pymupdf/pymupdf4llm-mcp
+
 # pymupdf4llm-mcp
 
 [![Release](https://img.shields.io/github/v/release/ai-zerolab/pymupdf4llm-mcp)](https://img.shields.io/github/v/release/ai-zerolab/pymupdf4llm-mcp)
